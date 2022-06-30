@@ -26,7 +26,7 @@ function Competiters() {
   return (
     <>
       <Header></Header>
-      {/* Birinci çalışanı bulduğumuzda ekrana bassın yoksa hata döner çünkü öyle bir kullanıcı yok(random-api) */}
+      {/* Birinci olan çalışanı bulduğumuzda ekrana bassın yoksa hata döner çünkü öyle bir kullanıcı yok(random-api) */}
       {firstCompetiter && (
         <div className="firstCompetiter">
           <div className="d_inline_table">
