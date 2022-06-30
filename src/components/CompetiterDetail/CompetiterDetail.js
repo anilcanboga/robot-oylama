@@ -9,8 +9,15 @@ function CompetiterDetail() {
   const competiterArray = useSelector((state) => state.competiter.competiters);
   let competiter = competiterArray.find((data) => data.id === parseInt(id, 10));
 
-  console.log(competiter);
-  if (!competiter) return <h1>YOK Kİ</h1>;
+  if (!competiter)
+    return (
+      <h1>
+        Böyle bir kullanıcı yok. Anasayfaya git <br></br>
+        <button className="backButton" onClick={() => navigate(`/`)}>
+          Anasayfa
+        </button>
+      </h1>
+    );
 
   let productionDate = competiter.date_of_birth.split("-", 1);
   return (
@@ -27,9 +34,9 @@ function CompetiterDetail() {
           <img src={competiter.avatar} className="" alt="" />
         </div>
         <div className="">
-          <h2>Bilgi</h2>
+          <h2 className="titleText">Aldığı oy: {competiter.vote}</h2>
           <div className="competiterDetailBox">
-            <div className="propertie">
+            <div className="property">
               <span>Kodu: </span>
               <span>{competiter.social_insurance_number}</span>
             </div>

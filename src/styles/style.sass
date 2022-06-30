@@ -1,32 +1,40 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'
+
+
 .voteButton 
-	padding: 10px 
-	background-color: #05b2eb 
+	padding: 10px 20px
+	background-color: #70AF85 
 	border-radius: 20px 
 	color: white 
-	box-shadow: 5px 10px #888888 
+	box-shadow: 5px 5px #888888 
 	font-weight: bold
 	&:active 
-		background-color: #08c32a 
+		background-color: #446a50 
 
 .backButton
-	padding: 10px 
-	background-color: #cd0303 
-	border-radius: 20px 
-	color: white 
+	padding: 10px 20px 
 	font-weight: bold
+	cursor: pointer
+	border-radius: 20px
+	color: #125d37
+	background-color: #57e09b
 
 .competitersText
 	font-weight: bold
+	cursor: pointer
 
 .robotAvatar
 	cursor: pointer
 
 .title
 	font-size: 3rem
+	margin-bottom: 2rem
+	margin-top: 2rem
 
 
-.d_inline_table
+.dInlineTable
 	display: inline-table
+	padding-bottom: 20px
 
 .competiterDetailBox 
 	display: flex 
@@ -38,10 +46,30 @@
 	margin-right: auto 
 	padding: 1rem 
 	border-radius: 1rem 
-	font-weight: bold 
+
 
 .property
 	padding: 0.3rem
+	span:nth-child(1)
+		color: #45855a
+		font-weight: 700 
+	span:nth-child(2)
+		font-weight: 400
+
+.titleText
+	color: #1b6032
 
 body 
-	background: lightblue
+	background: #F0EBE3
+	font-family: 'Roboto', sans-serif
+
+.voteBox
+	text-decoration: underline
+
+.competitersText 
+	svg 
+		display: inline-block 
+		vertical-align: bottom 
+		width: 20px 
+		height: 20px 
+		margin-right: 0.3rem 
